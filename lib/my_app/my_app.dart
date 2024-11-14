@@ -1,4 +1,3 @@
-import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:quran_app_c12_online_sun/config/theme/my_theme.dart';
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: MyTheme.lightTheme,
       routes: {
         RoutesManager.homeRoute: (_) => HomeScreen(),
-        RoutesManager.splashRoute: (_) => SplashScreen(),
+        RoutesManager.splashRoute: (_) => const SplashScreen(),
         RoutesManager.quranDetailsRoute: (_) => QuranDetailsScreen(),
       },
       initialRoute: RoutesManager.splashRoute,
